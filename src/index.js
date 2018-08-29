@@ -20,7 +20,7 @@ const defaultPlugins = [
   "@babel/plugin-syntax-import-meta",
   "@babel/plugin-proposal-export-namespace-from",
   "@babel/plugin-proposal-export-default-from",
-]
+];
 
 const extPlugins = [
   "@babel/plugin-proposal-function-bind",
@@ -34,7 +34,7 @@ const extPlugins = [
   "@babel/plugin-proposal-numeric-separator",
   "@babel/plugin-proposal-throw-expressions",
   ["@babel/plugin-proposal-class-properties", { "loose": false }]
-]
+];
 
 export default declare((api, opts) => {
   api.assertVersion(7);
