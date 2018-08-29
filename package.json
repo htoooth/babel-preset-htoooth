@@ -4,7 +4,8 @@
   "description": "my babel setting",
   "main": "lib/index.js",
   "scripts": {
-    "np": "np --",
+    "prepublishOnly": "npm run build",
+    "np": "np",
     "build": "babel src --out-dir lib"
   },
   "author": "htoooth",
