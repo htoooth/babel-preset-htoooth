@@ -4,6 +4,7 @@ Setting `babel` in my way.
 
 ## usage
 
+
 ```js
 
 // babel.config.js
@@ -55,3 +56,7 @@ const extPlugins = [
 ]
 
 ```
+
+## example
+
+You can find examples in [this repo](https://github.com/htoooth/babel-preset-htoooth-test).
