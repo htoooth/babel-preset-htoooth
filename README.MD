@@ -4,7 +4,7 @@ Setting `babel` in my way.
 
 ## usage
 
-This `preset` include `@babel/preset-env`, so you don't need to install `@babel/preset-env`.
+This `preset` includes `@babel/preset-env`, so you don't need to install `@babel/preset-env`.
 
 Default setting:
 
@@ -25,7 +25,7 @@ const presets = [
 
 ```js
 
-Set your `babel.config.js` .
+// Set your `babel.config.js` .
 
 // babel.config.js
 module.exports = {
@@ -45,7 +45,7 @@ module.exports = {
 
 ```
 
-if `all` is false (default), will load plugins:
+if `all` is false (default), will load below plugins:
 
 ```js
 const defaultPlugins = [
