@@ -1,11 +1,31 @@
-# babel-presets-htoooth
+# babel-preset-htoooth
 
 Setting `babel` in my way.
 
 ## usage
 
+This `preset` include `@babel/preset-env`, so you don't need to install `@babel/preset-env`.
+
+Default setting:
 
 ```js
+const presets = [
+  ["@babel/env", {
+    targets: {
+      browsers: ["> 1%", "last 2 versions", "not ie <= 8"]
+    },
+    useBuiltIns: "usage"
+  }]
+];
+
+```
+
+## how to use
+
+
+```js
+
+Set your `babel.config.js` .
 
 // babel.config.js
 module.exports = {
