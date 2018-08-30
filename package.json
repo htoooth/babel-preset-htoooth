@@ -1,20 +1,24 @@
 {
   "name": "babel-preset-htoooth",
   "version": "1.0.6",
-  "description": "my babel setting",
+  "description": "A Babel preset for my env.",
   "main": "lib/index.js",
   "scripts": {
     "prepublishOnly": "npm run build",
-    "np": "np",
     "build": "babel src --out-dir lib"
   },
   "author": "htoooth",
   "license": "MIT",
   "repository": "htoooth/babel-preset-htoooth",
+  "keywords": [
+    "babel",
+    "stage-0",
+    "preset",
+    "plugins"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "np": "^3.0.4"
+    "@babel/core": "^7.0.0"
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.0.0",
