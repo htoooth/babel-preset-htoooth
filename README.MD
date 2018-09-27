@@ -14,7 +14,7 @@ const presets = [
     targets: {
       browsers: ["> 1%", "last 2 versions", "not ie <= 8"]
     },
-    useBuiltIns: "usage"
+    useBuiltIns: "usage",
   }]
 ];
 

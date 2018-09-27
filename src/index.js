@@ -15,7 +15,7 @@ const overrides = [{
 }];
 
 const defaultPlugins = [
-  "@babel/plugin-transform-runtime",
+  ["@babel/plugin-transform-runtime", {}],
   "@babel/plugin-syntax-dynamic-import",
   "@babel/plugin-syntax-import-meta",
   "@babel/plugin-proposal-export-namespace-from",
@@ -40,6 +40,10 @@ export default declare((api, opts) => {
   api.assertVersion(7);
 
   let plugins = defaultPlugins;
+  
+  if ('corejs' in opts) {
+    defaultPlugins[0][1].corejs = opts.corejs;
+  }
 
   if (opts.all) {
     plugins = [...defaultPlugins, ...extPlugins];
