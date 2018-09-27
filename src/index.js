@@ -53,7 +53,7 @@ export default declare((api, opts) => {
     presets[0][1].useBuiltIns = opts.useBuiltIns;
   }
 
-  if (opts.modules) {
+  if ('modules' in opts) {
     presets[0][1].modules = opts.modules;
   }
 
